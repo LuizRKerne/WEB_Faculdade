@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<!-- Cabeçalho da Pagina-->
+<head>    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Home Page</title>
+    <link rel="stylesheet" href="minhaHomePageCSS.CSS">
+    <style>
+        #conteudo{
+            padding: 30px 0px;
+
+        }
+    </style>
+</head>
+
+
+<!-- Corpo da Pagina-->
+<body>
+    <!-- Título e Monkey Flip-->
+    <p id="homePageTitle" align="center ">Minha Home Page</p>
+    <p class="fotoPerfil" align="center">
+        <video id="meuVideo" width="800" height="450">
+        <source src= "monkeyFlip.mp4"type="video/mp4">
+        Seu browser não suporta a tag de vídeo.
+    </video>
+    <p align = "center"class="botaoplay">
+        <button wm-play="meuVideo">Play</button>
+    </p><br><br>
+
+
+    <!-- Info, links e contato-->
+    <h1 id="textoPrincipal" align="center ">Eu sou um desenvolvedor WEB que gosta de cozinhar</h1>
+    <h2 id="textoSecundario" align="center">Meu nome é Luiz Roberto Kerne e eu curso Sistemas de Informação na
+        UDESC</span><br><br><br>
+
+    <h3 id="textoSecundario" align="left">Links Favoritos</h3>
+    <ul>
+        <li Youtube -> <a id="link" href="https://www.youtube.com.br" target="_blank"> Youtube</a><br><br>
+        </li>
+        <li Google -> <a id="link" href="https://www.google.com.br" target="_blank"> Google</a><br><br>
+        </li>
+        <li Netflix -> <a id="link" href="https://www.netflix.com" target="_blank"> Netflix</a><br><br>
+        </li>
+        <li PrimeVideo -> <a id="link" href="https://www.primevideo.com/" target="_blank">
+                PrimeVideo</a><br><br>
+        </li>
+    </ul>
+    <hr /><br><br>
+            <h3 id="textoSecundario" align="left">Entre em contato conosco: <a href="mailto:cliqueaqui@empresa.com.br"
+                    target="_blank">Clique Aqui</a>
+            </h3><br><br>
+
+    
+    <!-- Formulário e Vídeo links-->
+    <nav id= "textoSecundario">
+        <a href wm-nav="./form.html">Formulário</a>
+    </nav>
+
+    <br><br>
+
+    <nav id= "textoSecundario">
+        <a href ="audioEVideo.html">Audio e Video com controles</a>
+    </nav>
+    <br><br>
+
+    
+    <!-- Inline CSS Exemplo 1-->
+    <p style="color: blue">Parágrafo com fonte azul.</p>
+    <br><br>
+    
+    <!-- Inline CSS Exemplo 2-->
+    <p>Esse outro parágrafo não é azul, a não ser que
+        exista <span style="color: red">CSS em outro lugar</span>.</p>
+    
+    <br><br>
+
+    <!--Conteudo CSS Incorporado-->
+    <p id="cssIncorporado1">Parágrafo alinhado para a direita.</p>
+    <br><br>
+
+    <!--Conteudo CSS com arquivo externo-->
+    <p id="externo1">Parágrafo branco alinhado para a esquerda.</p>
+    <br><br>
+    <h5 class="externo2">Header 5 maior, vermelho e alinhado para a direita</h5>
+    <br>
+    <p class="externo3">Imagem
+        <br>
+        <img src="YES.jpg"
+        alt="Yes" height="50" align="left">
+        sdasdasdasdasd ada sdasdasasd adasdasd  dsadas gf asd qwe qeqwt
+        sd  r gerw qwty 4 rrwefgar rEGHUHW 
+        R GWF G GHSFSF VER GY W ahdffwedwe
+    </p>
+
+
+    <section id="conteudo"></section>
+    <!-- Rodapé da Pagina-->
+    <footer>
+        Curso de Web 
+    </footer>
+
+
+    <!-- Javascript da pagina-->
+    <script>
+
+        function configurarVideo(id){
+            const video = document.getElementById(id)
+            video.oncontextmenu = () => false
+    
+            document.querySelector(`[wm-play=${id}]`).onclick = e =>video.play()
+        }
+        configurarVideo('meuVideo')
+
+        document.querySelectorAll('[wm-nav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+
+
+            link.onclick = function(e){
+                e.preventDefault()
+                fetch(link.getAttribute('wm-nav'))
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+
+    </script>
+    <!-- CSS Incorporado -->
+    <style>
+        #homePageTitle {
+            font-size: 100px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+        a {
+            color: red;
+            font-size: 25px;
+        }
+        #cssIncorporado1{
+            color: silver;
+            font-size: 20px;
+            text-align: right;
+            border
+        }
+    </style>
+</body>
+</html>

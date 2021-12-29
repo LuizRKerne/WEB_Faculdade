@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .campos * {
+                display: inline;
+            }
+
+            input {
+                width: 50px;
+            }
+            
+            input:focus {
+                background:rgb(2, 252, 253);
+            }
+
+            strong {
+                font-weight: normal;
+            }
+
+            .hide {
+                display: none;
+            }
+
+            .box{
+                width: 20px;
+                height: 20px;
+                margin: 2px;
+            }
+
+            .yellow {
+                background:yellow;
+            }
+
+            .red {
+                background:red;
+            }
+            
+            .lightblue {
+                background:rgb(2, 252, 253);
+            }
+        </style>
+        
+    </head>
+    <body onload="alert('Calcula soma')">
+
+        <h1>SOMA</h1>
+        <div class="campos">
+            <input id="input1" onfocus="enterInput()" onblur="leaveInput()" type="text">
+            <div>+</div>
+            <input id="input2" onfocus="enterInput()" onblur="leaveInput()" type="text">
+            <button onclick="calcula()"> = </button>
+            <div id="resultado" style="font-weight: bolder;">0</div>
+        </div>
+
+        <p>Ajuda: <strong id="str" class="hide">informe um operando</strong></p>
+
+        <br>
+
+        <div style="display: flex; align-items: center;">
+            <p>Testando cor do texto</p>
+            <div onmouseenter="enterResultColor('yellow')" onmouseleave="leaveResultColor()" class="box yellow"></div> 
+            <div onmouseenter="enterResultColor('red')" onmouseleave="leaveResultColor()" class="box red"> </div> 
+            <div onmouseenter="enterResultColor('rgb(2, 252, 253)')" onmouseleave="leaveResultColor()" class="box lightblue"> </div> 
+        </div>
+
+    </body>
+    <script>
+        enterInput = () => {
+            var el = document.getElementById("str");
+            el.classList.remove("hide");
+        }
+
+        leaveInput = () => {
+            var el = document.getElementById("str");
+            el.classList.add("hide");
+        }
+
+        calcula = () => {
+            var el1 = parseInt(document.getElementById("input1").value);
+            var el2 = parseInt(document.getElementById("input2").value);
+            var el = document.getElementById("resultado");
+            el.innerHTML = el1 + el2;
+        }
+
+        enterResultColor = (colorr) => {
+            var el = document.getElementById("resultado");
+            el.style.color = colorr;
+        }
+
+        leaveResultColor = () => {
+            var el = document.getElementById("resultado");
+            el.style.removeProperty("color");
+        }
+    </script>
+</html>

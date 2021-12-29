@@ -1,0 +1,189 @@
+<!DOCTYPE html><html><head></head><body>
+
+    elemento <b>datalist</b>
+    <form action="http://www.w3schools.com/action_page.php" method="get">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      </option><option value="Firefox">
+      </option><option value="Chrome">
+    </option></datalist>
+    <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    elemento <b>output</b>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="number" id="a" value="0"> +
+    <input type="number" id="b" value="0"> =
+    <output name="x">0</output>
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>autocomplete</b>
+    <form action="http://www.w3schools.com/action_page.php" autocomplete="on">
+      First name:<input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      E-mail: <input type="email" name="email" autocomplete="off"><br>
+      <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>novalidate</b>
+    <form action="http://www.w3schools.com/action_page.php" novalidate="">
+    E-mail: <input type="email" name="user_email">
+    <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    
+    atributo <b>autofocus</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      First name:<input type="text" name="fname" autofocus=""><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>form</b>
+    <form action="http://www.w3schools.com/action_page.php" id="form1">
+    First name: <input type="text" name="fname"><br>
+    <input type="submit" value="Submit">
+    </form>
+    <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+    Last name: <input type="text" name="lname" form="form1"><hr>
+    <p></p>
+    <p></p>
+    
+     atributo <b>formaction</b>
+     <form action="http://www.w3schools.com/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit"><br>
+      <input type="submit" formaction="http://www.w3schools.com/html/demo_admin.asp" value="Submit as admin">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>formenctype</b>
+    <form action="http://www.w3schools.com/html/demo_post_enctype.asp" method="post">
+      First name: <input type="text" name="fname"><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>formmethod</b>
+    <form action="http://www.w3schools.com/action_page.php" method="get">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formmethod="post" formaction="http://www.w3schools.com/html/demo_post.asp" value="Submit using POST">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>formnovalidate</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      E-mail: <input type="email" name="userid">
+      <input type="submit" value="Submit"><br>
+      <input type="submit" formnovalidate="" value="Submit without validation">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>formtarget</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="submit" value="Submit as normal">
+      <input type="submit" formtarget="_blank" value="Submit to a new window">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>height e width</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      First name: <input type="text" name="fname"><br>
+      Last name: <input type="text" name="lname"><br>
+      <input type="image" src="http://www.w3schools.com/html/img_submit.gif" alt="Submit" width="48" height="48">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>list</b>
+    <form action="http://www.w3schools.com/action_page.php" method="get">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      </option><option value="Firefox">
+      </option><option value="Chrome">
+      </option><option value="Opera">
+      </option><option value="Safari">
+    </option></datalist>
+    <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>min max</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      Enter a date before 1980-01-01:
+      <input type="date" name="bday" max="1979-12-31"><br>
+      Enter a date after 2000-01-01:
+      <input type="date" name="bday" min="2000-01-02"><br>
+      Quantity (between 1 and 5):
+      <input type="number" name="quantity" min="1" max="5"><br>
+      <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>multiple</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      Select images: <input type="file" name="img" multiple="">
+      <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>pattern</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+      <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>placeholder</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      <input type="text" name="fname" placeholder="First name"><br>
+      <input type="text" name="lname" placeholder="Last name"><br>
+      <input type="submit" value="Submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>required</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      Username: <input type="text" name="usrname" required="">
+      <input type="submit">
+    </form><hr>
+    <p></p>
+    <p></p>
+    
+    atributo <b>step</b>
+    <form action="http://www.w3schools.com/action_page.php">
+      <input type="number" name="points" step="3">
+      <input type="submit">
+    </form>
+    
+    
+    
+    </body></html>

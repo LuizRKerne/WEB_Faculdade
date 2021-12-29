@@ -1,0 +1,41 @@
+#textoPrincipal {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+#textoSecundario {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+#externo1{
+  border-style: groove;
+  border-color: black;
+  color:white;
+  text-align: left;
+}
+.externo2{
+  border-style: double;
+  border-color: gray;
+  color: red;
+  text-align: right;
+  font-size: larger;
+}
+
+.externo3{
+  border-style: dotted;
+  border-color: honeydew;
+  color: coral;
+  width: 400px;
+  border-width: 20px;
+  font-size: large;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body {
+  margin: 50px 50px 50px 50px;
+  background-image: linear-gradient(to right, lightgreen, green);
+}

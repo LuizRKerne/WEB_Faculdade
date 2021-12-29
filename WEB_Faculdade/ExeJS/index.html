@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de JS</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+
+<section class="header">
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#exercicio1">EXERCICIO 1</a></li>
+                <li><a href="#exercicio2">EXERCICIO 2</a></li>
+                <li><a href="#exercicio3">EXERCICIO 3</a></li>
+                <li><a href="#exercicio4">EXERCICIO 4</a></li>
+                <li><a href="#exercicio5">EXERCICIO 5</a></li>
+                <li><a href="#exercicio6">EXERCICIO 6</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav role="navigation">
+        <div id="menuToggle">
+
+            <input type="checkbox" />
+              
+            <span></span>
+            <span></span>
+            <span></span>
+        
+            <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#exercicio1"><li>Exercicio 1</li></a>
+            <a href="#exercicio2"><li>Exercicio 2</li></a>
+            <a href="#exercicio3"><li>Exercicio 3</li></a>
+            <a href="#exercicio4"><li>Exercicio 4</li></a>
+            <a href="#exercicio5"><li>Exercicio 5</li></a>
+            <a href="#exercicio6"><li>Exercicio 6</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-box">
+        <h1>Exercicios de JS</h1>
+    </div>
+</section>
+
+<!----- Exercicio 1 ------>
+<section id="exercicio1" class="exercicio1">
+        <div class="exercicio1-box">
+            <h1>Exercicio 1</h1>
+            <p>Crie uma página com script em JavaScript que calcula a média de 5 números inseridos pelo usuário e diga se a média é igual, menor ou maior que 7.</p>
+            
+        <h3>Calculador de Medias</h3>
+            <p>
+                <input type="text" name="source" id="item_exercicio1" placeholder = "Notas ( delimitado por ';' )">
+
+                <input type="button" value="calculate" id="calculate" onClick="notaMaiorOuMenorQueSete(item_exercicio1)">
+                        
+                <h3>Media = <input type="text" name="maiorMenorQueSete" id="maiorMenorQueSete"></h3>
+            </p>
+        </div>
+</section>
+
+
+<!----- Exercicio 2 ------>
+<section id="exercicio2" class="exercicio2">
+    <div class="exercicio2-box">
+        <h1>Exercicio 2</h1>
+        <p>Crie uma página com script em JavaScript que informe qual o menor e o maior de vários inteiros fornecidos pelo usuário.</p>
+        
+    <h3>Maior e Menor</h3>
+        <p>
+            <input type="text" name="source" id="item_exercicio2" placeholder = "Valores ( delimitado por ';' )">
+
+            <input type="button" value="Procurar" id="procurar" onClick="procurar(item_exercicio2)">
+                    
+            <h3>Maior = <input type="text" name="maior" id="maior"></h3>
+            <h3>Menor = <input type="text" name="menor" id="menor"></h3>
+        </p>
+    </div>
+</section>
+
+
+<!----- Exercicio 3 ------>
+<section id="exercicio3" class="exercicio3">
+    <div class="exercicio3-box">
+        <h1>Exercicio 3</h1>
+        <p> Crie uma página com script em JavaScript que lê 5 inteiros do teclado e armazena-os num vetor. Depois percorre este vetor mostrando os números ímpares.</p>
+        
+    <h3>Procurar ímpares</h3>
+        <p>
+            <input type="text" name="source" id="item_exercicio3" placeholder = "Valores INTEIROS ( delimitados por ';' )">
+
+            <input type="button" value="Procurar" id="procurarImpares" onClick="procurarImpares(item_exercicio3)">
+            
+            <h3>Impares = <input type="text" name="listaImpares" id="listaImpares"></h3>
+        </p>
+    </div>
+</section>
+
+
+<!----- Exercicio 4 ------>
+<section id="exercicio4" class="exercicio4">
+    <div class="exercicio4-box">
+        <h1>Exercicio 4</h1>
+        <p> Crie uma página com script em JavaScript que lê e armazena num vetor 5 números reais fornecidos pelo usuário e chama a função media() para imprimir a média dos valores. A função media() recebe um vetor e retorna a média dos valores.</p>
+        
+    <h3>Calculador de Medias</h3>
+        <p>
+            <input type="text" name="source" id="item_exercicio4" placeholder = "Notas ( delimitado por ';' )">
+
+            <input type="button" value="Calculate" id="calculateMedia" onClick="media(item_exercicio4)">
+                    
+            <h3>Media = <input type="text" name="media" id="resultadoMedia"></h3>
+        </p>
+    </div>
+</section>
+
+
+<!----- Exercicio 5 ------>
+<section id="exercicio5" class="exercicio5">
+    <div class="exercicio5-box">
+        <h1>Exercicio 5</h1>
+        <p> Criar um script com new Date (AAAA, MM, DD, 0, 0, 0) com sua data de nascimento e mostrar o dia da semana que você nasceu.</p>
+        
+    <h3>Dia Semana em Que Nasceu</h3>
+        <p>
+            <input type="text" name="source" id="item_exercicio5" placeholder = "Data de Nascimento (Ano/Mes/Dia)">
+
+            <input type="button" value="buscarDiaDaSemana" id="buscarDiaDaSemana" onClick="diaDaSemana(item_exercicio5)">
+                    
+            <h3>Dia da Semana = <input type="text" name="diaDaSemana" id="diaDaSemana"></h3>
+        </p>
+    </div>
+</section>
+
+
+<!----- Exercicio 6 ------>
+<section id="exercicio6" class="exercicio6">
+    <div class="exercicio6-box">
+        <h1>Exercicio 6</h1>
+        <p>A área A de um círculo é calculada por: A = PI * (raio * raio), sendo PI=3,1415. Crie um objeto chamado 'circulo' com o atributo 'raio' e método 'area'. O raio é informado pelo usuário. O método 'area' retorna a área do círculo. Peça ao usuário o raio de um círculo e informe sua área chamando o método 'area' do objeto. Utilize atributos e métodos do objeto Math.</p>
+        
+        <h3>Calcula Area de Um Circulo</h3>
+        <p>
+            <input type="text" name="source" id="item_exercicio6" placeholder = "Informe o raio do circulo">
+
+            <input type="button" value="Calcular a Area" id="Calculate" onClick="calculateArea(item_exercicio6)">
+                    
+            <h3>Area = <input type="text" name="areaDoCirculo" id="areaDoCirculo"></h3>
+        </p>
+    </div>
+</section>
+
+
+<!----- Coming Soon ------>
+<section id="exercicio-" class="exercicio-">
+    <div class="exercicio--box">
+        <h1>Exercicio ?</h1>
+        <p> Coming Soon...</p>
+        
+    <h3></h3>
+        <p>
+
+        </p>
+    </div>
+</section>
+<!--------------Footer------------------------------->
+
+
+<section class="footer">
+    <hr>
+    <a id= "backtotop" href="#">Back to the Top</a>
+    <h4>Valeu Falou</h4>
+    <p>Made by Luiz</p>
+</section>
+
+
+</body>
+
+
+
+
+<!--------------Codigo JavaScript------------------------------->
+<script>
+
+/***************************JS exe 1*************************************/
+function notaMaiorOuMenorQueSete(item_exercicio1) {
+    item_exercicio1 = item_exercicio1.value //item_exercicio1 is still an HTML element so you must first get the value of the element
+                       .split("/") // convert text into array of costs
+                       .map((i)=>Number(i)) // elements of array are still strings, must convert to numbers
+		let total = 0;
+		for(let i = 0; i < item_exercicio1.length; i++) {
+    		total += item_exercicio1[i];
+		}
+		let avg = total / item_exercicio1.length;
+		
+        if(avg < 7){document.getElementById("maiorMenorQueSete").value = `Media menor que 7`;
+        }
+        if(avg == 7){document.getElementById("maiorMenorQueSete").value = `Media Igual a 7`;
+        }
+        if(avg > 7){document.getElementById("maiorMenorQueSete").value = `Media maior que 7`;
+        }
+}
+
+
+/***************************JS exe 2*************************************/
+function procurar(item_exercicio2) {
+    item_exercicio2 = item_exercicio2.value //item_exercicio2 is still an HTML element so you must first get the value of the element
+                       .split(";") // convert text into array of costs
+                       .map((i)=>Number(i)) // elements of array are still strings, must convert to numbers
+        let maior = -99999999999999;
+        let menor = 999999999999999;
+		for(let i = 0; i < item_exercicio2.length; i++) {
+            if(item_exercicio2[i] > maior){
+                maior = item_exercicio2[i] 
+            }
+            if(item_exercicio2[i] < menor){
+                menor = item_exercicio2[i] 
+            }
+        
+        }
+        document.getElementById("maior").value = maior;
+        document.getElementById("menor").value = menor;
+}
+
+
+/***************************JS exe 3*************************************/
+function procurarImpares(item_exercicio3) {
+    item_exercicio3 = item_exercicio3.value //item_exercicio3 is still an HTML element so you must first get the value of the element
+        .split(";") // convert text into array of costs
+        .map((i)=>Number(i)) // elements of array are still strings, must convert to numbers
+
+        function valorinteiros(num){
+            return Number.isInteger(num)
+        }
+        function valorimpares(num){
+            return num % 2 != 0;
+        }
+        listaImpares=item_exercicio3.filter(valorimpares).filter(valorinteiros)
+        document.getElementById("listaImpares").value = listaImpares
+}
+
+
+/***************************JS exe 4*************************************/
+function media(item_exercicio4) {
+    item_exercicio4 = item_exercicio4.value //item_exercicio4 is still an HTML element so you must first get the value of the element
+                       .split(";") // convert text into array of costs
+                       .map((i)=>Number(i)) // elements of array are still strings, must convert to numbers
+		let total = 0;
+		for(let i = 0; i < item_exercicio4.length; i++) {
+    		total += item_exercicio4[i];
+		}
+		let avg = total / item_exercicio4.length;
+		document.getElementById("resultadoMedia").value = parseFloat(avg).toFixed(2)
+}
+
+
+/***************************JS exe 5*************************************/
+function diaDaSemana(item_exercicio5) {
+    item_exercicio5 = item_exercicio5.value //item_exercicio5 is still an HTML element so you must first get the value of the element
+                       .split("/") // convert text into array of costs
+                       .map((i)=>Number(i)) // elements of array are still strings, must convert to numbers
+		let input = "";
+		for(let i = 0; i < item_exercicio5.length; i++) {
+    		 input +=`,${item_exercicio5[i]}`;
+		}
+        const d = new Date(input);
+        let weekday = new Array(7);
+        weekday[0] = "Domingo";
+        weekday[1] = "Segunda";
+        weekday[2] = "Terca";
+        weekday[3] = "Quarta";
+        weekday[4] = "Quinta";
+        weekday[5] = "Sexta";
+        weekday[6] = "Sabado";
+
+        const n = weekday[d.getDay()];
+
+		document.getElementById("diaDaSemana").value = n
+}
+
+
+/***************************JS exe 6*************************************/
+function calculateArea(item_exercicio6){
+    const area = (item_exercicio6.value * item_exercicio6.value * Math.PI);
+    document.getElementById("areaDoCirculo").value = area
+}  
+</script>
+</html>

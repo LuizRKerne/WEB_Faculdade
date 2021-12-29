@@ -1,0 +1,29 @@
+#textoPrincipal {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#textoSecundario {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+#homePageTitle {
+    font-size: 100px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+a {
+    color: blue;
+    font-size: 25px;
+}
+
+body {
+    background-image: linear-gradient(to right, lightblue, blue);
+}

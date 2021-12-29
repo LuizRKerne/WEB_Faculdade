@@ -1,0 +1,57 @@
+<h1>Cadastre-se</h1>
+
+<h3>* Dados Obrigatórios</h1>
+
+<form>
+    <div>
+    <p>
+        <label for="a">Nome Completo: *</label>
+        <input id="id" type="text" name="fullname" title="Seu Nome Aqui..." required><br>
+    </p>
+    <p>
+        <label for="a">Email: *</label>
+        <input id="a" type="email" name="email" autocomplete="off"><br>
+    </p>
+    <p>
+        <label for="a">Data nascimento: *</label>
+        <input id="a" type="date" name="bday"> (idade minima 18 anos) <br />
+    </p>
+    <p>
+        <label for="a">Telefone: *</label>
+        <input id="a" type="tel" name="usrtel" placeholder="(xx)xxxx-xxxx" pattern="\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}">Formato/exemplo (99)9999-9999<br />
+    </p>
+    <p>
+        <label for="a">URL página pessoal:</label>
+        <input id="a" type="url" name="homepage"><br>
+    </p>
+    <p>
+        <label for="a">Estado onde reside</label>
+        <input list="estados" name="estado lista">
+        <datalist id="estados">
+            <option value="Santa Catarina"></option>
+            <option value="São Paulo"></option>
+            <option value="Amazonas"></option>
+            <option value="Acre"></option>
+            <option value="Bahia"></option>
+        </datalist>
+    </p> 
+    <p>
+        <Label for="a"></Label>
+        <button id="a" type="submit">Cadastrar-me</button>
+    </p>
+    </div>
+</form>
+
+<style>
+    #homePageTitle {
+    font-size: 100px;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 50px;
+    }
+
+    a {
+    color: red;
+    font-size: 25px;
+    }
+</style>
